@@ -24,7 +24,7 @@ done
 echo "✅ Notebooks ready — launching JupyterLab"
 exec jupyter lab \
     --ip=0.0.0.0 \
-    --port=8888 \
+    --port="${PORT:-8888}" \
     --no-browser \
     --allow-root \
     --NotebookApp.token='' \
